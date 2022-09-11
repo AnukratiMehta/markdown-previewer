@@ -2,60 +2,40 @@
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
 }
 
 .App {
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
 
 #preview, #editor {
   background-color: white;
   color: black;
   border: 2px solid black;
-  position: relative;
-  display: inline-block;
-  overflow: scroll;
-  border-top: none;
+  margin: auto;
   min-width: 500px;
-  min-height: 300px;
-  max-width: 500px;
-  max-height: 600px;
-  height: 300px;
-}
+  min-height: 500px;
+  position: relative;
 
-#editor.max, #preview.max {
-  height: 600px;
 }
-
-textarea {
-  border: none;
-  outline: none;
-}
-
 
 .header {
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   color: white;
-  height: 30px;
+  height: 65px;
   padding: 20px;
   background-color: #333;
-  margin-bottom: 50px;
 
 }
 
-.title, .editor-title, .preview-title {
+.title {
   margin-right: auto;
 }
-
-
 
 .preview-header, .editor-header {
   width: 100%;
@@ -63,16 +43,11 @@ textarea {
   display: flex;
   align-items: center;
   color: white;
-  height: 15px;
+  height: 65px;
   padding: 20px;
   background-color: #333;
-  border: 2px solid black;
 }
 
-.columns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
+.preview-title, .editor-title {
+  margin-right: auto;
 }
