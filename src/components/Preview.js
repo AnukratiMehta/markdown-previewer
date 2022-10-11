@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 
 
@@ -12,7 +13,9 @@ export default function Preview(props) {
             </div>
             
            <div id="preview" className={props.previewSize ? "max": ""}>
+           <ReactMarkdown>
             {props.content}
+                </ReactMarkdown>
             </div>
         </div>
     )
