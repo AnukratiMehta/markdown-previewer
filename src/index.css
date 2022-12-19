@@ -23,14 +23,14 @@ html {
   overflow: scroll;
   border-top: none;
   min-width: 500px;
-  min-height: 300px;
+  min-height: 250px;
   max-width: 500px;
-  max-height: 600px;
-  height: 300px;
+  max-height: 450px;
+  height: 250px;
 }
 
 #editor.max, #preview.max {
-  height: 600px;
+  height: 450px !important;
 }
 
 textarea {
